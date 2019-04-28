@@ -10,6 +10,8 @@ public class dragger : MonoBehaviour
 
     private Rigidbody m_RigidBody;
 
+    private Vector3 mOffset_sub;
+
     private void OnMouseUp()
     {
         Rigidbody[] parentArray = GetComponentsInParent<Rigidbody>();
@@ -54,6 +56,17 @@ public class dragger : MonoBehaviour
 
     private void OnMouseDrag()
     {
+        Transform[] parentArray = GetComponentsInParent<Transform>();
+        Transform[] childArray = GetComponentsInChildren<Transform>();
+        List<Transform> totalList = new List<Transform>();
+        totalList.AddRange(parentArray);
+        totalList.AddRange(childArray);
+        Transform[] totalArray = totalList.ToArray();
+        foreach (Transform t in totalArray)
+        {
+            mOffset_sub = t.position - GetMouseAsWorldPoint();
+            t.position = GetMouseAsWorldPoint() + mOffset_sub;
+        }
         transform.position = GetMouseAsWorldPoint() + mOffset;
     }
 }

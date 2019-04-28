@@ -249,6 +249,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &117647740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: 7a460b5850a3c1e49999319ceebece63,
+    type: 3}
+  m_PrefabInstance: {fileID: 545181946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &117647742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117647740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbbd0ef94e3c9504783ed6a228b458f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,9 +744,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82648f1efcb01704ea1a3e55e1cd99a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MagnetForce: 10
+  MagnetForce: 20
   MagneticPole: 0
-  RigidBody: {fileID: 0}
+  RigidBody: {fileID: 1136929076}
 --- !u!1 &718033055
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,9 +853,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718033055}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 100
+  m_Drag: 10
+  m_AngularDrag: 5
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1136,6 +1154,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932698782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbbd0ef94e3c9504783ed6a228b458f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &948918427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: 7a460b5850a3c1e49999319ceebece63,
+    type: 3}
+  m_PrefabInstance: {fileID: 545181946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &948918429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948918427}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbbd0ef94e3c9504783ed6a228b458f9, type: 3}
@@ -1572,6 +1608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82648f1efcb01704ea1a3e55e1cd99a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MagnetForce: 60
+  MagnetForce: 10
   MagneticPole: 1
   RigidBody: {fileID: 718033060}
