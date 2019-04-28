@@ -35,8 +35,20 @@ public class dragger : MonoBehaviour
 
     void OnMouseDown()
     {
-        mZCoord = Camera.main.WorldToScreenPoint(
-            gameObject.transform.position).z;
+
+        FixedJoint[] ptArray = GetComponentsInParent<FixedJoint>();
+        FixedJoint[] ctArray = GetComponentsInChildren<FixedJoint>();
+        List<FixedJoint> ttList = new List<FixedJoint>();
+        ttList.AddRange(ptArray);
+        ttList.AddRange(ctArray);
+        FixedJoint[] ttArray = ttList.ToArray();
+        foreach (FixedJoint f in ttArray)
+        {
+            Destroy(f);
+        }
+        FixedJoint fj = GetComponent<FixedJoint>();
+        Destroy(fj);
+        mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
 
         //Store offset = gameobject world pos - mouse world pos
         mOffset = gameObject.transform.position - GetMouseAsWorldPoint();

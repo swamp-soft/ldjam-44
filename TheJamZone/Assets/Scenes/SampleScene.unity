@@ -711,6 +711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 669950525}
   - component: {fileID: 669950526}
+  - component: {fileID: 669950527}
   m_Layer: 0
   m_Name: Magno
   m_TagString: Untagged
@@ -747,6 +748,18 @@ MonoBehaviour:
   MagnetForce: 20
   MagneticPole: s:leg
   RigidBody: {fileID: 1136929076}
+--- !u!114 &669950527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669950524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e0853b01b3fbb4eb87d5ec4a6d0c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &718033055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,20 +1130,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0.7, z: 0}
---- !u!138 &932698785
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932698782}
-  m_ConnectedBody: {fileID: 665475370}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!54 &932698786
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1177,6 +1176,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbbd0ef94e3c9504783ed6a228b458f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &948918430
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948918427}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1136929073 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 7a460b5850a3c1e49999319ceebece63,
@@ -1229,6 +1244,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbbd0ef94e3c9504783ed6a228b458f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1136929078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136929073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e0853b01b3fbb4eb87d5ec4a6d0c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1249511183
@@ -1562,6 +1589,7 @@ GameObject:
   - component: {fileID: 2145975891}
   - component: {fileID: 2145975892}
   - component: {fileID: 2145975893}
+  - component: {fileID: 2145975894}
   m_Layer: 0
   m_Name: leftLeg
   m_TagString: Untagged
@@ -1611,3 +1639,15 @@ MonoBehaviour:
   MagnetForce: 10
   MagneticPole: n:leg
   RigidBody: {fileID: 718033060}
+--- !u!114 &2145975894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145975890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e0853b01b3fbb4eb87d5ec4a6d0c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
