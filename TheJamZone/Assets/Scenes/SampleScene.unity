@@ -365,6 +365,52 @@ Transform:
   m_Father: {fileID: 2010114551}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &529062080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 529062082}
+  - component: {fileID: 529062081}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &529062081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529062080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8504ba78474ac7242946c27b62cc98d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Permeability: 0.05
+  MaxForce: 10000
+  UseScaleForDebugDraw: 0
+--- !u!4 &529062082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529062080}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6300001, y: -0.31788993, z: -0.41}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,6 +683,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbbd0ef94e3c9504783ed6a228b458f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &669950524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669950525}
+  - component: {fileID: 669950526}
+  m_Layer: 0
+  m_Name: Magno
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &669950525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669950524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1136929074}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &669950526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669950524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82648f1efcb01704ea1a3e55e1cd99a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MagnetForce: 10
+  MagneticPole: 0
+  RigidBody: {fileID: 0}
 --- !u!1 &718033055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1147,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 545181946}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1136929074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: 7a460b5850a3c1e49999319ceebece63,
+    type: 3}
+  m_PrefabInstance: {fileID: 545181946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1136929075
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1331,10 +1429,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1249511185}
     m_Modifications:
-    - target: {fileID: 100012, guid: 46eca52f30766bd4ca666cd9ff6154e7, type: 3}
-      propertyPath: m_Name
-      value: legman
-      objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 46eca52f30766bd4ca666cd9ff6154e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.15
@@ -1378,6 +1472,10 @@ PrefabInstance:
     - target: {fileID: 400012, guid: 46eca52f30766bd4ca666cd9ff6154e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 46eca52f30766bd4ca666cd9ff6154e7, type: 3}
+      propertyPath: m_Name
+      value: legman
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 46eca52f30766bd4ca666cd9ff6154e7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1427,6 +1525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2145975891}
   - component: {fileID: 2145975892}
+  - component: {fileID: 2145975893}
   m_Layer: 0
   m_Name: leftLeg
   m_TagString: Untagged
@@ -1461,3 +1560,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2145975893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145975890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82648f1efcb01704ea1a3e55e1cd99a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MagnetForce: 60
+  MagneticPole: 1
+  RigidBody: {fileID: 718033060}
