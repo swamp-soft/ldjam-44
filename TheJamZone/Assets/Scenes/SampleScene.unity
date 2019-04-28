@@ -745,7 +745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MagnetForce: 20
-  MagneticPole: 0
+  MagneticPole: s:leg
   RigidBody: {fileID: 1136929076}
 --- !u!1 &718033055
 GameObject:
@@ -1609,5 +1609,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MagnetForce: 10
-  MagneticPole: 1
+  MagneticPole: n:leg
   RigidBody: {fileID: 718033060}

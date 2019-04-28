@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 
 public class magnoville : MonoBehaviour
-{
+{   
     public float Permeability = 0.05f;
     public float MaxForce = 10000.0f;
 
@@ -25,9 +25,16 @@ public class magnoville : MonoBehaviour
         var part1 = 4 * Mathf.PI * dist;
 
         var f = (part0 / part1);
-
-        if (magnet1.MagneticPole == magnet2.MagneticPole)
+        string[] poledata1 = magnet1.MagneticPole.Split(':');
+        string[] poledata2 = magnet2.MagneticPole.Split(':');
+        if (poledata1[1] != poledata2[1])
+        {
+            f = 0;
+        }
+        else if (poledata1[0] == poledata2[0])
+        {
             f = -f;
+        }
 
         return f * r.normalized;
     }
@@ -96,7 +103,7 @@ public class magnoville : MonoBehaviour
             var scale1 = 0.35f / 0.5f;
             if (UseScaleForDebugDraw)
                 scale1 *= m1.transform.parent.lossyScale.x * (m1.MagnetForce / 50.0f);
-            if (m1.MagneticPole == magno.Pole.North)
+            if (m1.MagneticPole.Split(':')[0] ==  "n")
             {
                 Gizmos.color = new Color(0.0f, 0.0f, 1.0f, 0.25f);
                 Gizmos.DrawSphere(m1.transform.position, scale1);
@@ -124,7 +131,7 @@ public class magnoville : MonoBehaviour
 
                 var f = CalculateGilbertForce(m1, m2);
 
-                if (m2.MagneticPole == magno.Pole.North)
+                if (m2.MagneticPole.Split(':')[0] == "n")
                 {
                     Gizmos.color = Color.cyan;
                 }
