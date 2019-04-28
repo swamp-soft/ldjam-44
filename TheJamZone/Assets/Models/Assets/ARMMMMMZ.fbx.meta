@@ -28,17 +28,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert1
-    second: {fileID: 2100000, guid: 7b8f50357b6906c4189e87b5b74d0e76, type: 2}
+    second: {fileID: 2100000, guid: 91d7208a08872444a8107198ff48a8de, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert2
-    second: {fileID: 2100000, guid: 939319959ea24144dafe5be0dd42277c, type: 2}
+    second: {fileID: 2100000, guid: 6e19d1c92e4d1bb49b9b85e48ef3cf43, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: phong2
-    second: {fileID: 2100000, guid: cf8a296c3c12c504f8b9ea339b1025c4, type: 2}
+    second: {fileID: 2100000, guid: cdc86bfb683d91147b4e1b30a2d3e263, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

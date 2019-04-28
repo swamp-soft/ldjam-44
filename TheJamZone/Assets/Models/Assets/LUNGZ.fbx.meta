@@ -55,7 +55,12 @@ ModelImporter:
     4300000: pCylinder48
     9500000: //RootNode
     13700000: pCylinder48
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: c9db6989383c0cd48b38d629b84630c3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
